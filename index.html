@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iqbal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+  <link rel="icon" href="img/pf-icon.jpeg">
+</head>
+
+<body>
+  <!-- ini header -->
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">Muhamad Iqbal</h1>
+      <button id="themeToggle" aria-label="Toggle Theme">
+        <span class="iconify" data-icon="mdi:weather-sunny" data-inline="false"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ini main -->
+  <main>
+    <!-- profil section -->
+    <section class="profile">
+      <div class="container">
+        <div class="profile-picture">
+          <img src="img/foto-profil.jpg" alt="Muhamad Iqbal's Photo" class="avatar">
+        </div>
+        <h2 class="name">MUHAMAD IQBAL</h2>
+        <div class="details">
+          <div class="detail-item">
+            <span class="iconify" data-icon="mdi:school-outline" data-inline="false"></span>
+            <p>SMKN 1 MAJA</p>
+          </div>
+          <div class="detail-item">
+            <span class="iconify" data-icon="mdi:map-marker-outline" data-inline="false"></span>
+            <p>Majalengka, Indonesia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>Perkenalkan, nama saya Muhamad Iqbal, nama panggilan Iqbal. Saya seorang pelajar di SMKN 1 MAJA, jurusan
+          Rekayasa Perangkat Lunak.
+          Terima kasih telah mengunjungi portofolio saya! Jangan ragu untuk melihat hasil karya saya di bagian lainnya.
+        </p>
+      </div>
+    </section>
+
+    <!-- skils section -->
+    <section class="skills">
+      <div class="container">
+        <h3>My Skills</h3>
+        <!-- Programming Skills -->
+        <div class="skills-category">
+          <h4>Programming</h4>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="iconify" data-icon="vscode-icons:file-type-html" data-width="40"></span>
+              <p>HTML</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="vscode-icons:file-type-css" data-width="40"></span>
+              <p>CSS</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:javascript" data-width="40"></span>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:php" data-width="40"></span>
+              <p>PHP</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:mysql" data-width="40"></span>
+              <p>MySQL</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:laravel" data-width="40"></span>
+              <p>Laravel</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:bootstrap" data-width="40"></span>
+              <p>Bootstrap</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI/UX Skills -->
+        <div class="skills-category">
+          <h4>UI/UX</h4>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:figma" data-width="40"></span>
+              <p>Figma</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:adobe-xd" data-width="40"></span>
+              <p>Adobe XD</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editing Skills -->
+        <div class="skills-category">
+          <h4>Editing Video Foto</h4>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:adobe-premiere" data-width="40"></span>
+              <p>Premiere Pro</p>
+            </div>
+            <div class="skill-card">
+              <span class="iconify" data-icon="logos:adobe-photoshop" data-width="40"></span>
+              <p>Photoshop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- certificate section -->
+    <section class="certificates">
+      <div class="container">
+        <h3>Certificates</h3>
+        <div class="cert-grid">
+          <div class="cert-card" onclick="openModal('img/flutter.png')">
+            <img src="img/flutter.png" alt="Certificate 1">
+          </div>
+          <div class="cert-card" onclick="openModal('img/webinar.png')">
+            <img src="img/webinar.png" alt="Certificate 2">
+          </div>
+          <div class="cert-card" onclick="openModal('img/web-dasar.png')">
+            <img src="img/web-dasar.png" alt="Certificate 3">
+          </div>
+          <div class="cert-card" onclick="openModal('img/js-dasar.png')">
+            <img src="img/js-dasar.png" alt="Certificate 4">
+          </div>
+          <div class="cert-card" onclick="openModal('img/fe-pemula.png')">
+            <img src="img/fe-pemula.png" alt="Certificate 5">
+          </div>
+          <div class="cert-card" onclick="openModal('img/educourse.png')">
+            <img src="img/educourse.png" alt="Certificate 6">
+          </div>
+          <!-- Tambahkan lebih banyak gambar -->
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Certificate Preview">
+      </div>
+    </section>
+
+    <!-- project -->
+    <section class="projects-section">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <a href="https://tugas-web-dior.netlify.app/" target="_blank">
+              <img src="img/dior-web.png" alt="Project 1 Screenshot">
+            </a>
+            <h4>Dior Web (Kelompok)</h4>
+            <p>Project web tugas kelompok</p>
+          </div>
+          <div class="project-card">
+            <a href="https://sumpah-pemuda-web.vercel.app/" target="_blank">
+              <img src="img/sumpah-pemuda.png" alt="Project 2 Screenshot">
+            </a>
+            <h4>Sumpah Pemuda Web</h4>
+            <p>Project web lomba educourse 2024</p>
+          </div>
+          <div class="project-card">
+            <a href="https://github.com/your-repo-3" target="_blank">
+              <img src="img/portfolio.png" alt="Project 3 Screenshot">
+            </a>
+            <h4>My Portfolio</h4>
+            <p>Project web untuk portfolio saya</p>
+          </div>
+          <!-- Tambahkan proyek lainnya -->
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h3>Contact Me</h3>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    
+
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-media">
+          <a href="https://instagram.com/iqbalm11_" target="_blank" aria-label="LinkedIn">
+            <span class="iconify" data-icon="mdi:linkedin" data-width="30"></span>
+          </a>
+          <a href="https://github.com/mmmiqbalxi" target="_blank" aria-label="GitHub">
+            <span class="iconify" data-icon="mdi:github" data-width="30"></span>
+          </a>
+          <a href="https://instagram.com/iqbalm11_" target="_blank" aria-label="Instagram">
+            <span class="iconify" data-icon="mdi:instagram" data-width="30"></span>
+          </a>
+          <a href="https://wa.me/+6283103208436" target="_blank" aria-label="WhatsApp">
+            <span class="iconify" data-icon="mdi:whatsapp" data-width="30"></span>
+          </a>
+        </div>
+        <p>mmmiqbalxi@gmail.com</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

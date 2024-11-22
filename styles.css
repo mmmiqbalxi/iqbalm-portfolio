@@ -52,8 +52,10 @@ button#themeToggle {
 
 .profile-picture .avatar {
   width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  height: 170px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 5px solid #444;
   object-fit: cover;
 }
 
@@ -389,7 +391,8 @@ button[type="submit"]:hover {
   /* header dan profil */
   .profile-picture .avatar {
     width: 100px;
-    height: 100px;
+    height: 150px;
+    border-radius: 100px;
   }
 
   header {

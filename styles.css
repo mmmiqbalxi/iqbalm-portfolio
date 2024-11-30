@@ -282,12 +282,14 @@ button#themeToggle {
   line-height: 1.5;
 }
 
-/* css contact */
+/* Section Contact */
 .contact {
   margin: 50px auto;
   text-align: center;
+  background-color: #f9f9f9;
   padding: 50px 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact h3 {
@@ -297,17 +299,13 @@ button#themeToggle {
   color: #333;
 }
 
-.contact form {
+#contact-form {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
+#contact-form label {
   display: block;
   font-size: 1rem;
   margin-bottom: 8px;
@@ -315,21 +313,39 @@ button#themeToggle {
   color: #444;
 }
 
-.form-group input,
-.form-group textarea {
+#contact-form input,
+#contact-form textarea {
   width: 100%;
   padding: 10px 15px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+#contact-form input:focus,
+#contact-form textarea:focus {
   border-color: #007BFF;
   outline: none;
+}
+
+#contact-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
 }
 
 button[type="submit"] {
@@ -461,7 +477,11 @@ button[type="submit"]:hover {
   }
 
   .contact h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  #contact-form button {
+    font-size: 0.9rem;
   }
 
   button[type="submit"] {

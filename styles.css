@@ -165,6 +165,11 @@ button#themeToggle {
   margin-bottom: 30px;
 }
 
+.certificates p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -237,6 +242,11 @@ button#themeToggle {
   margin-bottom: 30px;
 }
 
+.projects-section p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -286,10 +296,8 @@ button#themeToggle {
 .contact {
   margin: 50px auto;
   text-align: center;
-  background-color: #f9f9f9;
   padding: 50px 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact h3 {
